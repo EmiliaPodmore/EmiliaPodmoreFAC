@@ -1,0 +1,184 @@
+body {
+  background: linear-gradient(300deg, #feac5e, #f67280, #c779d0, #4bc0c8);
+  background-size: 1400% 1400%;
+  animation: gradient-animation 24s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.main {
+  height: 50vh;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffff;
+  font-size: 62px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.roller {
+  height: 4.125rem;
+  line-height: 4rem;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #05094f;
+}
+
+.roller #rolltext {
+  position: absolute;
+  top: 0;
+  animation: slide 8s infinite;
+}
+
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -4rem;
+  }
+  50% {
+    top: -8rem;
+  }
+  72.5% {
+    top: -12.25rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #f1faee;
+    font-size: 20px;
+  }
+
+  .roller {
+    height: 2.6rem;
+    line-height: 2rem;
+  }
+
+  .roller #rolltext {
+    animation: slide-mob 5s infinite;
+  }
+}
+@keyframes slide-mob {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -2.125rem;
+  }
+  50% {
+    top: -4.25rem;
+  }
+  72.5% {
+    top: -6.375rem;
+  }
+}
+.container {
+  background: #ffff;
+  max-width: 600px;
+  padding: 30px;
+  margin: 10px auto;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+}
+h2 {
+  color: #05094f;
+  margin: 5px auto;
+  padding: 5px;
+  font-size: 38px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+p {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+.card-notes {
+  font-size: 15px;
+}
+strong {
+  color: #4bc0c8;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.card {
+  background-color: #fff;
+  padding: 14px;
+  box-shadow: 2px 3px 15px 2px rgba(75, 192, 200, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+  margin: 25px 0 25px 0;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+i {
+  display: block;
+  font-size: 60px;
+  transition: all 150ms ease-in-out;
+}
+i:hover {
+  cursor: pointer;
+}
+button {
+  color: #feac5e;
+  background: #ffff;
+  border: 2px solid #feac5e;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  display: block;
+  padding: 16px;
+  margin: 30px auto;
+  transition: all 150ms ease-in-out;
+}
+button:hover {
+  cursor: pointer;
+  color: #ffff;
+  background-color: #feac5e;
+}
+footer {
+  color: #ffff;
+  font-size: 20px;
+  font-family: monospace;
+  padding: 16px;
+  margin: 10px 0;
+}
+a {
+  color: #05094f;
+}
+a:hover {
+  cursor: pointer;
+  font-style: italic;
+}
