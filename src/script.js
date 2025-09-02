@@ -9,5 +9,4 @@ function signIn() {
   }`;
 }
 
-let contactButton = document.querySelector("#sign");
-contactButton.addEventListener("click", signIn);
+window.addEventListener("load", signIn);
